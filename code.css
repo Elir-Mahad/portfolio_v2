@@ -1,0 +1,1487 @@
+html {
+	line-height: 1.15;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+body {
+	margin: 0;
+}
+article,
+aside,
+footer,
+header,
+nav,
+section {
+	display: block;
+}
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+figcaption,
+figure,
+main {
+	display: block;
+}
+figure {
+	margin: 1em 40px;
+}
+hr {
+	box-sizing: content-box;
+	height: 0;
+	overflow: visible;
+}
+pre {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+a {
+	background-color: transparent;
+	-webkit-text-decoration-skip: objects;
+}
+abbr[title] {
+	border-bottom: none;
+	text-decoration: underline;
+	text-decoration: underline dotted;
+}
+b,
+strong {
+	font-weight: inherit;
+}
+b,
+strong {
+	font-weight: bolder;
+}
+code,
+kbd,
+samp {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+dfn {
+	font-style: italic;
+}
+mark {
+	background-color: #ff0;
+	color: #000;
+}
+small {
+	font-size: 80%;
+}
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sub {
+	bottom: -0.25em;
+}
+sup {
+	top: -0.5em;
+}
+audio,
+video {
+	display: inline-block;
+}
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+img {
+	border-style: none;
+}
+svg:not(:root) {
+	overflow: hidden;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: sans-serif;
+	font-size: 100%;
+	line-height: 1.15;
+	margin: 0;
+}
+button,
+input {
+	overflow: visible;
+}
+button,
+select {
+	text-transform: none;
+}
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: button;
+}
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+fieldset {
+	padding: 0.35em 0.75em 0.625em;
+}
+legend {
+	box-sizing: border-box;
+	color: inherit;
+	display: table;
+	max-width: 100%;
+	padding: 0;
+	white-space: normal;
+}
+progress {
+	display: inline-block;
+	vertical-align: baseline;
+}
+textarea {
+	overflow: auto;
+}
+[type="checkbox"],
+[type="radio"] {
+	box-sizing: border-box;
+	padding: 0;
+}
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+[type="search"] {
+	-webkit-appearance: textfield;
+	outline-offset: -2px;
+}
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+::-webkit-file-upload-button {
+	-webkit-appearance: button;
+	font: inherit;
+}
+details,
+menu {
+	display: block;
+}
+summary {
+	display: list-item;
+}
+canvas {
+	display: inline-block;
+}
+template {
+	display: none;
+}
+[hidden] {
+	display: none;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: "";
+	clear: both;
+	height: 0;
+}
+
+html {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+/* Below are the general styles - linking different fonts to their elements. */
+
+body,
+ul,
+h1,
+h2,
+h3 p {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2 {
+	font-family: "Arimo", sans-serif;
+}
+
+.wrapper {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* Below are styles for the menu*/
+
+.topnav {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin-bottom: 2rem;
+	background-color: #00abec;
+	z-index: 1;
+
+	/* code to make it sticky below */
+
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.topnav ul {
+	list-style: none;
+	display: flex;
+	padding-top: -3rem;
+}
+
+.topnav a {
+	text-decoration: none;
+	background-color: rgb(240, 240, 240);
+	border-bottom: 2px black groove;
+	color: black;
+	border-radius: 5px;
+	font-size: 1.7rem;
+	margin: 1.7rem;
+	padding: 0.7rem;
+}
+
+.topnav a:hover {
+	background-color: darkgray;
+	border-bottom: 2px white groove;
+	border-top: 2px white groove;
+}
+
+/* Drop Down */
+
+.topnav .phone {
+	display: none;
+}
+
+/* Below are the styles of the header */
+
+.p_firstbox {
+	background-color: #00abec;
+}
+
+.p_firstbox header {
+	min-width: 100%;
+	height: 100%;
+	background-size: cover;
+}
+
+.headertext {
+	margin-top: 6.2rem;
+	padding-left: 5rem;
+	padding-bottom: 3rem;
+	display: flex;
+}
+
+.headertext div {
+	width: 50%;
+}
+
+.headertext img {
+	height: 40rem;
+	border-radius: 3rem;
+}
+
+.headertext .hook {
+	padding-top: 12rem;
+}
+
+.headertext .hook h1 {
+	margin-bottom: 6rem;
+}
+
+.downloadcv {
+	background-color: black;
+	color: #00abec;
+	font-size: 1.7rem;
+	padding: 1.5rem;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+.downloadcv_m a {
+	text-decoration: none;
+	color: #00abec;
+}
+
+.downloadcv_m {
+	background-color: black;
+	border: transparent;
+	font-size: 1.7rem;
+	padding: 1.2rem;
+	border-radius: 5px;
+	display: none;
+}
+
+.p_firstbox h1 {
+	/* color:white;   */
+	font-size: 64px;
+	font-weight: 500;
+	letter-spacing: -2.288px;
+	line-height: 56px;
+	font-weight: bolder;
+}
+
+/* Below are the styles of the body */
+
+main {
+	background-color: rgb(240, 240, 240);
+	padding-bottom: 4rem;
+	padding-top: 3rem;
+}
+
+.about .wrapper {
+	display: flex;
+	padding-left: 3rem;
+	padding-right: 3rem;
+	padding-top: 3rem;
+	padding-bottom: 1rem;
+}
+
+/* Below are the styles of the about */
+
+.bio h2 {
+	font-size: 3.5rem;
+}
+
+.bio p {
+	font-size: 1.8rem;
+	width: 80%;
+	line-height: 4rem;
+}
+
+/* Below are the styles of the toolkit */
+
+.toolkit h2 {
+	font-size: 3.5rem;
+	margin-bottom: 2rem;
+}
+
+/* Below will make the name of the tool disappear */
+
+.htmlp,
+.sassp,
+.cssp,
+.jsp,
+.reactp,
+.jqueryp,
+.apip,
+.firebasep,
+.githubp,
+.gitp,
+.responsivep,
+.accessp {
+	margin: 0rem;
+	font-size: 1.4rem;
+}
+
+.responsivep,
+.accessp {
+	display: block;
+	margin: auto;
+}
+
+/* Below is the hover effects for bock of tools */
+
+.alltools .tool {
+	-webkit-transition: -webkit-transform 0.8s ease-in-out;
+	transition: transform 0.8s ease-in-out;
+}
+
+.alltools .top .tool:hover {
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
+	background-color: rgb(166, 255, 252);
+	border: 1px solid black;
+	border-radius: 0.5rem;
+}
+
+.alltools .middle .tool:hover {
+	-webkit-transform: rotate(-360deg);
+	transform: rotate(-360deg);
+	background-color: #cff6cf;
+	border: 1px solid black;
+	border-radius: 0.5rem;
+}
+
+.alltools .bottom .tool:hover {
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
+	background-color: rgb(166, 255, 252);
+	border: 1px solid black;
+	border-radius: 0.5rem;
+}
+
+/* Tools are divided into three boxes below are the styles for each box */
+
+.alltools .tool {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	display: block;
+	margin: auto;
+	padding: 0.5rem;
+}
+
+.alltools .top,
+.alltools .middle,
+.alltools .bottom {
+	box-shadow: rgba(69, 67, 96, 0.3) 0px 5px 20px 0px;
+	display: flex;
+	margin-bottom: 3rem;
+	padding: 0.5rem;
+}
+
+.alltools .top {
+	border-radius: 3rem;
+	width: 35rem;
+}
+
+.alltools .middle {
+	border-radius: 3rem;
+	width: 40rem;
+}
+
+.alltools .bottom {
+	border-radius: 3rem;
+	width: 45rem;
+}
+
+.toolkit .alltools img {
+	width: 6rem;
+	display: block;
+	margin: auto;
+}
+
+.alltools .smaller {
+	width: 21%;
+}
+
+/* below is the portfolio section */
+
+.projects h2 {
+	text-align: center;
+	font-size: 3.5rem;
+}
+
+.projects h4 {
+	text-align: center;
+	font-weight: 500;
+	font-size: 1.5rem;
+	color: black;
+	padding: 0.2rem;
+	width: 36rem;
+	display: block;
+	margin: auto;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: #cff6cf;
+	border-radius: 15px;
+}
+
+.projects h4 span {
+	font-size: 3rem;
+}
+
+/* beginning of the main box inclides sitelist and portfolio site info */
+
+.mainbox {
+	display: flex;
+	justify-content: center;
+	padding-right: 2.5rem;
+	padding-left: 2.5rem;
+}
+
+/* Below are the styles for the list of completed projects/sites */
+
+.sitelist {
+	box-shadow: rgba(69, 67, 96, 0.3) 0px 5px 20px 0px;
+	border-radius: 3rem;
+	margin-top: 2rem;
+	margin-left: 1.5rem;
+	padding: 1rem;
+	height: 41rem;
+}
+
+.sitelist .projectnames {
+	padding: 0.5rem;
+	border-radius: 3rem;
+	border: 4px solid #00abec;
+	font-size: 2rem;
+	text-align: center;
+	font-weight: 100;
+}
+
+.sitelist .projectnames::before {
+	content: "∳";
+	padding: 0.5rem;
+	font-size: 2rem;
+}
+
+.sitelist .projectnames::after {
+	content: "∳";
+	padding: 0.5rem;
+	font-size: 2rem;
+}
+
+.sitelist .projectnames:hover {
+	border-radius: 3rem;
+	background-color: transparent;
+	color: black;
+}
+
+.sitelist h3 {
+	border-bottom: 1px solid #00abec;
+	color: black;
+	font-weight: 100;
+	margin-bottom: 1rem;
+	padding: 1rem;
+	font-size: 1.8rem;
+}
+
+.sitelist .jap {
+	color: darkred;
+	font-weight: 500;
+}
+
+.sitelist h3:hover {
+	-webkit-transition: -webkit-transform 0.3s ease-in-out;
+	transition: transform 0.3s ease-in-out;
+}
+
+.sitelist h3:hover {
+	background-color: black;
+	color: #00abec;
+	border-radius: 0.5rem;
+	cursor: pointer;
+}
+
+/* Below are the styles for the profolio projects */
+
+.siteinfo {
+	display: flex;
+	border-radius: 3rem;
+	box-shadow: rgba(69, 67, 96, 0.3) 0px 5px 20px 0px;
+	margin-top: 2rem;
+	margin-bottom: 3rem;
+	width: 80%;
+}
+
+.siteinfo .image {
+	width: 60%;
+	/* reduce this until it hits the mobile version */
+}
+
+.siteinfo .main {
+	width: 110%;
+	height: 45rem;
+	margin-left: -5rem;
+}
+
+.siteinfo .words {
+	padding: 2rem;
+	margin-left: 2.5rem;
+	width: 35rem;
+}
+
+.siteinfo .words h3 {
+	border: 4px solid #00abec;
+	padding: 0.5rem;
+	border-radius: 3rem;
+	width: 70%;
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 100;
+	margin-bottom: -0.5rem;
+	margin-top: 0.5rem;
+}
+
+.siteinfo .words h3 span {
+	color: darkred;
+	font-weight: 500;
+}
+
+.siteinfo .words h3::before {
+	content: "∳";
+	padding: 0.5rem;
+	font-size: 2rem;
+}
+
+.siteinfo .words h3::after {
+	content: "∳";
+	padding: 0.5rem;
+	font-size: 2rem;
+}
+
+.siteinfo .words p {
+	font-size: 2rem;
+	line-height: 3rem;
+}
+
+.madewith {
+	border: 4px solid #00abec;
+	padding: 0.2rem;
+	border-radius: 3rem;
+	width: 70%;
+	font-weight: 100;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+.madewith::before {
+	content: "∳";
+	padding: 0.5rem;
+	font-size: 2rem;
+}
+
+.madewith::after {
+	content: "∳";
+	padding: 0.5rem;
+	font-size: 2rem;
+}
+
+.siteinfo .tools {
+	display: flex;
+	margin-bottom: 2rem;
+	width: 50%;
+}
+
+.tools img {
+	width: 4rem;
+	display: block;
+	margin: auto;
+}
+
+.tools .tool {
+	background-color: #cff6cf;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font-size: 1.5rem;
+	display: block;
+	margin: auto;
+	padding: 0.5rem;
+}
+
+.links {
+	margin-top: 2rem;
+	margin-bottom: 1.5rem;
+	margin-left: -1rem;
+}
+
+.links a {
+	text-decoration: none;
+	color: black;
+	display: flex;
+	align-items: center;
+}
+
+.links button {
+	border: 1px solid #00abec;
+	border-radius: 0.5rem;
+	height: 4rem;
+	width: 12rem;
+	font-size: 1.5rem;
+	border-radius: 0.5rem;
+	letter-spacing: 0.12rem;
+	margin-left: 1rem;
+}
+
+.links img {
+	width: 3rem;
+	display: block;
+	margin: auto;
+}
+
+.links button:hover {
+	-webkit-transition: -webkit-transform 0.8s ease-in-out;
+	transition: transform 0.8s ease-in-out;
+}
+
+.links button:hover {
+	-webkit-transform: rotate(360deg) scale(1.2);
+	transform: rotate(360deg) scale(1.2);
+	background-color: rgb(222, 255, 166);
+	border: 1px solid black;
+	border-radius: 0.5rem;
+}
+
+/* beginning of the main box inclides sitelist and portfolio site info
+I only tagged the classes projects, mainbox, and siteinfo with the _m
+All the other classes automatically get the styles from the
+desktop version passed down to them 
+For some elements, i edited the styling taking into consideration
+the fact that they're already automatically inherited the styles from the desktop version. */
+
+.projects_m {
+	display: none;
+}
+
+.projects_m h2 {
+	text-align: center;
+	font-size: 3.5rem;
+	margin-bottom: 2rem;
+}
+
+.projects_m h4 {
+	text-align: center;
+	font-weight: 500;
+	font-size: 1.3rem;
+	color: black;
+	padding: 0.5rem;
+	width: 35rem;
+	display: block;
+	margin: auto;
+	margin-top: -2rem;
+	margin-bottom: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #cff6cf;
+	border-radius: 15px;
+}
+
+.projects_m h4 span {
+	font-size: 3rem;
+}
+
+.mainbox_m {
+	justify-content: center;
+}
+
+/* below are the styles for the list of projects/sites */
+
+.mainbox_m .sitelist {
+	display: block;
+	margin: auto;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	box-shadow: none;
+	padding: 0rem;
+}
+
+.mainbox_m .sitelist .projectnames {
+	font-size: 2rem;
+	font-weight: 700;
+	padding: 1rem;
+	background-color: transparent;
+	border: 3px solid #00abec;
+}
+
+.mainbox_m .sitelist .projectnames span {
+	display: none;
+}
+
+.mainbox_m .sitelist .projectnames::before {
+	content: none;
+}
+
+.mainbox_m .sitelist .projectnames::after {
+	content: none;
+}
+
+.mainbox_m .sitelist .projectnames:hover {
+	transform: none;
+	border: none;
+	background-color: transparent;
+}
+
+.mainbox_m .sitelist .pname {
+	font-size: 1.7rem;
+	margin: 0.5rem;
+	text-align: center;
+	border: none;
+}
+
+.mainbox_m .sitelist .pname span {
+	padding: 0.6rem;
+	color: black;
+	border-bottom: 1px solid green;
+	border-radius: 50%;
+}
+
+.mainbox_m .sitelist h3 {
+	margin-top: 1rem;
+}
+
+/* below are the styles for the porfolio showecased projects */
+
+.siteinfo_m {
+	display: block;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	border-radius: 3rem;
+	box-shadow: rgba(69, 67, 96, 0.3) 0px 5px 20px 0px;
+	margin-top: 2rem;
+	margin-bottom: 3rem;
+	padding-bottom: 1.5rem;
+	width: 60%;
+}
+
+.siteinfo_m .image {
+	width: 100%; /* reduce this until it hits the mobile version */
+}
+
+.siteinfo_m .main {
+	display: block;
+	margin: auto;
+	width: 90%;
+	height: 40rem;
+}
+
+.siteinfo_m .words {
+	margin-top: -3rem;
+	padding: 2rem;
+	text-align: center;
+	width: 100%;
+}
+
+.siteinfo_m .words h3,
+.siteinfo_m .words .madewith {
+	text-align: center;
+	width: 35%;
+	display: block;
+	margin: auto;
+	border: 4px solid #00abec;
+	padding: 0.5rem;
+	border-radius: 3rem;
+	font-size: 2rem;
+	font-weight: 100;
+}
+
+.siteinfo_m .words h3 span {
+	color: darkred;
+	font-weight: 500;
+}
+
+.siteinfo_m .words h3::after,
+.siteinfo_m .words h3::before {
+	content: none;
+}
+
+.siteinfo_m .words p {
+	width: 80%;
+	display: block;
+	margin: auto;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	font-size: 2rem;
+	line-height: 3rem;
+}
+
+.siteinfo_m .madewith {
+	border: 4px solid #00abec;
+	padding: 0.2rem;
+	border-radius: 3rem;
+	width: 70%;
+	font-weight: 100;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+.siteinfo_m .madewith::before,
+.siteinfo_m .madewith::after {
+	content: none;
+}
+
+.siteinfo_m .tools {
+	width: 30%;
+	display: block;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	margin-top: 1rem;
+}
+
+.siteinfo_m .tools img {
+	width: 4rem;
+	display: block;
+	margin: auto;
+}
+
+.siteinfo_m .tools .tool {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font-size: 1.5rem;
+	display: block;
+	margin: auto;
+	padding: 0.5rem;
+}
+
+.siteinfo_m .links {
+	margin-top: 2rem;
+	margin-bottom: 1.5rem;
+	margin-left: -1rem;
+}
+
+.siteinfo_m .links a {
+	text-decoration: none;
+	color: black;
+	display: flex;
+	align-items: center;
+}
+
+.siteinfo_m .links button {
+	border: 1px solid #00abec;
+	border-radius: 0.5rem;
+	height: 4rem;
+	width: 12rem;
+	font-size: 1.5rem;
+	border-radius: 0.5rem;
+	letter-spacing: 0.12rem;
+	margin-left: 1rem;
+}
+
+.siteinfo_m .links img {
+	width: 3rem;
+	display: block;
+	margin: auto;
+}
+
+.siteinfo_m .links button:hover {
+	-webkit-transition: -webkit-transform 0.8s ease-in-out;
+	transition: transform 0.8s ease-in-out;
+}
+
+.siteinfo_m .links button:hover {
+	-webkit-transform: rotate(360deg) scale(1.2);
+	transform: rotate(360deg) scale(1.2);
+	background-color: rgb(222, 255, 166);
+	border: 1px solid black;
+	border-radius: 0.5rem;
+}
+
+/* below are the styles for the socials and contact form */
+
+.contact h2 {
+	text-align: center;
+	font-size: 3.5rem;
+	margin-top: 1rem;
+	margin-bottom: 3rem;
+}
+
+.contact .wrapper {
+	margin-top: 2rem;
+	box-shadow: rgba(69, 67, 96, 0.3) 0px 5px 20px 0px;
+	border-radius: 2rem;
+	padding: 2rem;
+	width: 45%;
+}
+
+.socials {
+	display: flex;
+	justify-content: center;
+}
+
+.social img {
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+	margin-bottom: 1.5rem;
+	width: 4rem;
+}
+
+.social img {
+	-webkit-transition: -webkit-transform 0.4s ease-in-out;
+	transition: transform 0.4s ease-in-out;
+}
+
+.socials .link img:hover {
+	-webkit-transform: rotate(360deg) scale(1.5);
+	transform: rotate(360deg) scale(1.5);
+	border-radius: 3rem;
+	background-color: rgb(207, 255, 207);
+}
+
+.socials .git img:hover {
+	-webkit-transform: rotate(-360deg) scale(1.5);
+	transform: rotate(-360deg) scale(1.5);
+	border-radius: 3rem;
+	background-color: lemonchiffon;
+}
+
+.socials .devv img:hover {
+	-webkit-transform: rotate(360deg) scale(1.5);
+	transform: rotate(360deg) scale(1.5);
+	border-radius: 0.5rem;
+	background-color: lavender;
+}
+
+/* form */
+
+.contact .myform {
+	display: flex;
+	flex-direction: column;
+	font-size: 1.7rem;
+}
+
+.inputemail input,
+.inputmessage textarea {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.inputemail {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1rem;
+}
+
+.inputemail input {
+	height: 4rem;
+}
+
+.inputmessage {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1rem;
+}
+
+.inputmessage textarea {
+	height: 20rem;
+}
+
+.myform button {
+	background-color: black;
+	color: #00abec;
+	border: transparent;
+	cursor: pointer;
+	width: 10rem;
+	border-radius: 5px;
+	height: 3rem;
+	display: block;
+	margin: auto;
+}
+
+/* footer */
+
+footer {
+	background-color: #d1d1d1;
+	padding: 1rem;
+}
+
+footer p {
+	color: black;
+	font-size: 1.6rem;
+	text-align: center;
+}
+
+footer p span {
+	color: red;
+}
+
+/* media */
+
+@media (max-width: 1040px) {
+	/*  */
+	.topnav .desk {
+		display: none;
+	}
+
+	.topnav ul a:hover {
+		background-color: transparent;
+	}
+
+	.topnav .phone {
+		display: block;
+		/* Im not show the mobile version of the menu because its causing to many issues. 
+		Its just more straight forward for the user to scroll down. */
+		padding: 1rem;
+		display: flex;
+	}
+
+	.topnav img {
+		margin-left: 1rem;
+	}
+
+	.topnav {
+		display: flex;
+		justify-content: space-around;
+	}
+	.headertext {
+		margin-top: 6rem;
+	}
+
+	.headertext .hook h1 {
+		margin-bottom: 4rem;
+	}
+
+	.bio p {
+		width: 90%;
+		line-height: 3rem;
+	}
+
+	.projects {
+		display: none;
+	}
+
+	.projects_m {
+		display: block;
+	}
+
+	.projects_m .mainbox_m .sitelist {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.projects_m .mainbox_m .sitelist .projects_setone,
+	.projects_m .mainbox_m .sitelist .projects_settwo {
+		display: flex;
+	}
+
+	.projects_m .mainbox_m .sitelist .projects_settwo {
+		justify-content: center;
+	}
+
+	.siteinfo_m .main {
+		width: 100%;
+	}
+
+	.contact .wrapper {
+		width: 70%;
+	}
+}
+
+@media (max-width: 940px) {
+	.siteinfo_m {
+		width: 80%;
+	}
+
+	.mainbox_m .sitelist {
+		width: 70%;
+	}
+}
+
+@media (max-width: 834px) {
+	.headertext img {
+		height: 35rem;
+	}
+
+	.headertext h1 {
+		font-size: 6rem;
+	}
+
+	.headertext .hook h1 {
+		margin-bottom: 2.5rem;
+	}
+
+	.downloadcv {
+		padding: 1rem;
+	}
+
+	.about .wrapper {
+		flex-direction: column;
+		padding-top: 0rem;
+		padding-bottom: 1rem;
+		border-bottom: 1px dotted black;
+	}
+
+	.bio {
+		width: 100%;
+	}
+
+	.bio h2 {
+		text-align: center;
+	}
+	.bio p {
+		line-height: 4rem;
+		width: 100%;
+		text-align: center;
+	}
+
+	.toolkit {
+		margin-bottom: 2rem;
+	}
+
+	.toolkit h2 {
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+
+	.toolkit .top {
+		width: 50%;
+		display: block;
+		margin: auto;
+		display: flex;
+		margin-bottom: 2rem;
+	}
+
+	.toolkit .middle {
+		width: 60%;
+		display: block;
+		margin: auto;
+		display: flex;
+		margin-bottom: 2rem;
+	}
+
+	.toolkit .bottom {
+		width: 70%;
+		display: block;
+		margin: auto;
+		display: flex;
+		margin-bottom: 2rem;
+	}
+
+	.projects_m .wrapper {
+		margin-bottom: 3rem;
+	}
+
+	.projects_m {
+		padding-top: 3rem;
+		padding-bottom: 2rem;
+		border-bottom: 1px dotted black;
+	}
+}
+
+@media (max-width: 768px) {
+	.headertext {
+		flex-direction: column;
+		padding: 0rem;
+		margin: 0rem;
+	}
+
+	.headertext .image {
+		margin-top: 10rem;
+	}
+
+	.headertext .image,
+	.headertext .hook {
+		width: 100%;
+		padding: 0rem;
+	}
+
+	.headertext img {
+		display: block;
+		margin: auto;
+	}
+
+	.headertext h1 {
+		margin: 3rem;
+		text-align: center;
+	}
+
+	.downloadcv {
+		display: none;
+	}
+
+	.downloadcv_m {
+		display: block;
+		margin: auto;
+		margin-bottom: 3rem;
+	}
+
+	.toolkit .top {
+		width: 70%;
+	}
+
+	.toolkit .middle {
+		width: 80%;
+	}
+
+	.toolkit .bottom {
+		width: 90%;
+	}
+
+	.mainbox_m .sitelist {
+		width: 80%;
+	}
+
+	.siteinfo_m .words h3 {
+		width: 45%;
+	}
+}
+
+@media (max-width: 600px) {
+	.toolkit .alltools img {
+		width: 5rem;
+	}
+
+	.toolkit .top {
+		width: 75%;
+	}
+
+	.toolkit .middle {
+		width: 90%;
+	}
+
+	.toolkit .bottom {
+		width: 100%;
+	}
+
+	.mainbox_m .sitelist h3 {
+		margin-left: 0.5rem;
+		border-bottom: 1px solid #00abec;
+	}
+
+	.siteinfo_m {
+		width: 95%;
+	}
+
+	.mainbox_m .sitelist {
+		width: 100%;
+	}
+
+	.siteinfo_m .words h3 {
+		width: 55%;
+	}
+
+	.siteinfo_m .words .madewith {
+		width: 45%;
+	}
+
+	.contact .wrapper {
+		width: 90%;
+	}
+
+	.contact img {
+		width: 5rem;
+	}
+}
+
+@media (max-width: 436px) {
+	.toolkit .top,
+	.toolkit .middle,
+	.toolkit .bottom {
+		padding: 1rem;
+	}
+
+	.toolkit .tool p {
+		font-size: 1.2rem;
+	}
+
+	.mainbox_m .sitelist .pname {
+		display: flex;
+		align-items: center;
+	}
+}
+
+@media (max-width: 414px) {
+	.about .wrapper {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+
+	.bio p {
+		line-height: 3.5rem;
+		text-align: left;
+	}
+
+	.toolkit .tool p {
+		font-size: 1.1rem;
+	}
+
+	.siteinfo_m .main {
+		height: 30rem;
+	}
+
+	.siteinfo_m .words h3 {
+		width: 60%;
+	}
+
+	.siteinfo_m .words p {
+		width: 100%;
+	}
+
+	.siteinfo_m .words .madewith {
+		width: 50%;
+	}
+}
+
+@media (max-width: 384px) {
+	.headertext img {
+		height: 30rem;
+	}
+
+	.headertext h1 {
+		font-size: 5rem;
+	}
+
+	.projects_m h4 {
+		width: 20rem;
+		margin-top: 2rem;
+	}
+
+	.siteinfo_m {
+		width: 100%;
+	}
+
+	.siteinfo_m .words {
+		margin: 0rem;
+		padding: 0rem;
+	}
+
+	.siteinfo_m .words p {
+		font-size: 2rem;
+		padding: 0.5rem;
+	}
+}
+
+@media (max-width: 360px) {
+	.toolkit .bottom .tool {
+		margin-left: -0.5rem;
+	}
+}
+
+@media (max-width: 340px) {
+	.p_firstbox {
+		width: 101.5%;
+	}
+
+	.toolkit .bottom .tool {
+		margin-left: -0.9rem;
+	}
+}
+
+@media (max-width: 320px) {
+	.siteinfo_m .tool img {
+		width: 2.8rem;
+	}
+}

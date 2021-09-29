@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- this makes sure that the media queries work; without it the queries will not function -->
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Portfolio</title>
+
+		<!-- link to google fonts     -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Arimo&family=Roboto&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- load in fontawesome -->
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+			integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+			crossorigin="anonymous"
+		/>
+
+		<!-- link to styles -->
+		<link rel="stylesheet" href="./code.css" />
+	</head>
+	<body>
+		<section class="p_firstbox">
+			<header>
+				<div class="topnavcontainer">
+					<nav class="topnav">
+						<a href="index.html"> E'lir Mahad </a>
+
+						<ul class="main-menu desk">
+							<li><a href="#projects">Projects</a></li>
+							<!-- <li><a href="#contact">Contact</a></li> -->
+							<li><a href="https://mahad-blog.netlify.app/">Blog</a></li>
+							<li><a href="./art.html">Art</a></li>
+						</ul>
+
+						<ul class="main-menu phone">
+							<!-- <li><a href="#projects_m">Projects</a></li> -->
+							<li><a href="https://mahad-blog.netlify.app/">Blog</a></li>
+							<li><a href="./art.html">Art</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="wrapper">
+					<div class="headertext">
+						<div class="image">
+							<img src="Assets/Mahad adult.jpeg" />
+						</div>
+
+						<div class="hook">
+							<h1>I build useful things on the internet</h1>
+							<a
+								class="downloadcv"
+								href="./assets/cv_mahad.pdf"
+								type="file"
+								target="_blank"
+								>Download CV
+							</a>
+							<!-- resume button for mobile below only appears in mobile -->
+							<button class="downloadcv_m">
+								<a href="./assets/cv_mahad.pdf" type="file" target="_blank"
+									>Download CV
+								</a>
+							</button>
+						</div>
+					</div>
+				</div>
+			</header>
+		</section>
+
+		<main>
+			<section class="about">
+				<div class="wrapper">
+					<div class="bio">
+						<h2>About me</h2>
+
+						<p class="before">
+							My name is Mahad Mohamood and I'm a front end web developer based
+							in Toronto. As a child, I spent most of my free time drawing. In
+							university, my favourite courses were math and philosophy. I’ve
+							worked previously as a university researcher and as an English
+							teacher. I started coding as a hobby; and like most artists, I
+							became addicted to my hobby. I almost always lose track of time
+							when I’m coding. I enjoy designing accessible websites and
+							applications, writing dry code, and debugging problems. Besides
+							coding, I like reading 📖 and meditating 🧘🏾‍♂️.
+						</p>
+					</div>
+
+					<div class="toolkit" id="tools">
+						<h2>My Toolbox</h2>
+
+						<ul class="alltools">
+							<ul class="top">
+								<a class="tool">
+									<img class="html" src="Assets/html.png" />
+									<p class="htmlp">Html</p>
+								</a>
+
+								<a class="tool fix">
+									<img class="sass" src="Assets/sass.png" />
+									<p class="sassp">Sass</p>
+								</a>
+
+								<a class="tool fix">
+									<img class="css" src="Assets/ccs33.png" />
+									<p class="cssp">CSS3</p>
+								</a>
+							</ul>
+
+							<ul class="middle">
+								<!--  -->
+								<a class="tool fix">
+									<img class="js" src="Assets/javascript.png" />
+									<p class="jsp">Javascript</p>
+								</a>
+
+								<a class="tool fix">
+									<img class="react" src="Assets/react.png" />
+									<p class="reactp">React</p>
+								</a>
+
+								<a class="tool fix">
+									<img class="jquery" src="Assets/jquery.png" />
+									<p class="jqueryp">Jquery</p>
+								</a>
+
+								<a class="tool fix">
+									<img class="api" src="Assets/api.png" />
+									<p class="apip">API</p>
+								</a>
+								<!--  -->
+							</ul>
+
+							<ul class="bottom">
+								<!--  -->
+								<a class="tool">
+									<img class="firebase" src="Assets/firebase.png" />
+									<p class="firebasep">Firebase</p>
+								</a>
+
+								<a class="tool fix">
+									<img class="github" src="Assets/github.png" />
+									<p class="githubp">Github</p>
+								</a>
+
+								<a class="tool fix">
+									<img class="git" src="Assets/git.png" />
+									<p class="gitp">Git</p>
+								</a>
+
+								<a class="tool smaller" id="projects_m">
+									<img class="responsive" src="Assets/responsive-design.png" />
+									<p class="responsivep">Responsive design</p>
+								</a>
+
+								<a class="tool smaller" id="projects">
+									<img class="access" src="Assets/accessibility2.png" />
+									<p class="accessp">Web accessibility</p>
+								</a>
+								<!--  -->
+							</ul>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class="projects">
+				<h2>Portfolio</h2>
+				<h4>
+					To see project details, click on the project's name <span>⬊</span>
+				</h4>
+
+				<div class="wrapper">
+					<section class="mainbox">
+						<section class="siteinfo">
+							<div class="words">
+								<!--  -->
+								<h3>Searchsquid</h3>
+
+								<p>
+									This react app is a search engine. It pulls data from
+									‘Googleapi’, and then outputs results that best match the
+									users query.
+								</p>
+
+								<p class="madewith">Made with</p>
+
+								<ul class="tools">
+									<a class="tool up"
+										>Javascript
+										<img src="Assets/javascript.png" />
+									</a>
+									<a class="tool down">
+										React
+										<img src="Assets/react.png" />
+									</a>
+									<a class="tool up">API <img src="Assets/api.png"/></a>
+									<a class="tool down">
+										CSS3
+										<img src="Assets/ccs33.png" />
+									</a>
+								</ul>
+
+								<div class="links">
+									<button>
+										<a href="https://elir-mahad.github.io/searchsquid/"
+											>Website<img src="Assets/internet.png"
+										/></a>
+									</button>
+									<button>
+										<a href="https://github.com/Elir-Mahad/searchsquid"
+											>Github<img src="Assets/githublin.png"
+										/></a>
+									</button>
+								</div>
+							</div>
+
+							<div class="image">
+								<img class="main" src="Assets/searchsquid.png" />
+							</div>
+						</section>
+
+						<section class="sitelist">
+							<!--  -->
+							<h3 class="projectnames">Projects</h3>
+
+							<h3 class="searchsquid ">
+								<!--  -->
+								<span>1:</span> Search squid
+							</h3>
+
+							<h3 class="flicks">
+								<!--  -->
+								<span>2:</span> Flicks
+							</h3>
+
+							<h3 class="cybercrime">
+								<!--  -->
+								<span>3:</span> Cyber Crimes
+							</h3>
+
+							<h3 class="anime">
+								<!--  -->
+								<span>4:</span> Hikiku <span class="jap"> ひきく</span>
+							</h3>
+
+							<h3 class="creativeclone">
+								<!--  -->
+								<span>5:</span> Creative Clone
+							</h3>
+							<!--  -->
+						</section>
+					</section>
+				</div>
+			</section>
+
+			<section class="projects_m">
+				<h2>Portfolio</h2>
+				<h4>
+					<span>⇣</span> To see project details, click on the project's name
+				</h4>
+
+				<div class="wrapper">
+					<section class="mainbox_m">
+						<section class="sitelist">
+							<!--  -->
+							<h3 class="projectnames">
+								<span>ζ</span> Projects <span>ζ</span>
+							</h3>
+
+							<div class="projectsets">
+								<div class="projects_setone">
+									<h3 class="searchsquid pname">
+										<!--  -->
+										<span class="searchsquid_span">1</span> Search squid
+									</h3>
+
+									<h3 class="flicks pname">
+										<!--  -->
+										<span class="flicks_span">2</span> Flicks
+									</h3>
+
+									<h3 class="cybercrime pname">
+										<!--  -->
+										<span class="cybercrime_span">3</span> Cyber Crimes
+									</h3>
+								</div>
+
+								<div class="projects_settwo">
+									<h3 class="anime pname">
+										<!--  -->
+										<span class="anime_span">4</span> Hikiku
+									</h3>
+
+									<h3 class="creativeclone pname">
+										<!--  -->
+										<span class="creativeclone_span">5</span> Creative Clone
+									</h3>
+								</div>
+							</div>
+							<!--  -->
+						</section>
+
+						<section class="siteinfo_m">
+							<div class="image">
+								<img class="main" src="Assets/searchsquid.png" />
+							</div>
+							<div class="words">
+								<!--  -->
+								<h3>Searchsquid</h3>
+
+								<p>
+									This react app is a search engine. It pulls data from
+									‘Googleapi’, and then outputs results that best match the
+									users query.
+								</p>
+
+								<p class="madewith">Made with</p>
+
+								<ul class="tools">
+									<a class="tool up"
+										>Javascript
+										<img src="Assets/javascript.png" />
+									</a>
+									<a class="tool down">
+										React
+										<img src="Assets/react.png" />
+									</a>
+									<a class="tool up">API <img src="Assets/api.png"/></a>
+									<a class="tool down">
+										CSS3
+										<img src="Assets/ccs33.png" />
+									</a>
+								</ul>
+
+								<div class="links">
+									<button>
+										<a href="https://elir-mahad.github.io/searchsquid/"
+											>Website<img src="Assets/internet.png"
+										/></a>
+									</button>
+									<button>
+										<a href="https://github.com/Elir-Mahad/searchsquid"
+											>Github<img src="Assets/githublin.png"
+										/></a>
+									</button>
+								</div>
+							</div>
+						</section>
+					</section>
+				</div>
+			</section>
+
+			<section class="contact" id="contact">
+				<h2>Let's be friends</h2>
+
+				<div class="wrapper">
+					<div class="socialscontainer">
+						<ul class="socials">
+							<a href="https://www.linkedin.com/in/mahad-m/" class="social link"
+								><img src="Assets/linkedincontact.png" />
+							</a>
+							<a href="https://github.com/Elir-Mahad" class="social git"
+								><img src="Assets/githubcontact.png" />
+							</a>
+						</ul>
+
+						<form
+							class="myform"
+							action="https://formspree.io/f/xjvpezya"
+							method="POST"
+						>
+							<label class="inputemail">
+								Your email:
+								<input type="text" name="_replyto" />
+							</label>
+							<label class="inputmessage">
+								Your message:
+								<textarea name="message"></textarea>
+							</label>
+							<button type="submit">Send</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="wrapper">
+				<p>© Mahad, 2020 - All Rights Reserved</p>
+			</div>
+		</footer>
+
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.min.js"
+			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			crossorigin="anonymous"
+		></script>
+
+		<script src="script.js"></script>
+	</body>
+</html>

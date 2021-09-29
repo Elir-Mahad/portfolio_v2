@@ -1,0 +1,540 @@
+html {
+	line-height: 1.15;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+body {
+	margin: 0;
+}
+article,
+aside,
+footer,
+header,
+nav,
+section {
+	display: block;
+}
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+figcaption,
+figure,
+main {
+	display: block;
+}
+figure {
+	margin: 1em 40px;
+}
+hr {
+	box-sizing: content-box;
+	height: 0;
+	overflow: visible;
+}
+pre {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+a {
+	background-color: transparent;
+	-webkit-text-decoration-skip: objects;
+}
+abbr[title] {
+	border-bottom: none;
+	text-decoration: underline;
+	text-decoration: underline dotted;
+}
+b,
+strong {
+	font-weight: inherit;
+}
+b,
+strong {
+	font-weight: bolder;
+}
+code,
+kbd,
+samp {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+dfn {
+	font-style: italic;
+}
+mark {
+	background-color: #ff0;
+	color: #000;
+}
+small {
+	font-size: 80%;
+}
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sub {
+	bottom: -0.25em;
+}
+sup {
+	top: -0.5em;
+}
+audio,
+video {
+	display: inline-block;
+}
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+img {
+	border-style: none;
+}
+svg:not(:root) {
+	overflow: hidden;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: sans-serif;
+	font-size: 100%;
+	line-height: 1.15;
+	margin: 0;
+}
+button,
+input {
+	overflow: visible;
+}
+button,
+select {
+	text-transform: none;
+}
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: button;
+}
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+fieldset {
+	padding: 0.35em 0.75em 0.625em;
+}
+legend {
+	box-sizing: border-box;
+	color: inherit;
+	display: table;
+	max-width: 100%;
+	padding: 0;
+	white-space: normal;
+}
+progress {
+	display: inline-block;
+	vertical-align: baseline;
+}
+textarea {
+	overflow: auto;
+}
+[type="checkbox"],
+[type="radio"] {
+	box-sizing: border-box;
+	padding: 0;
+}
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+[type="search"] {
+	-webkit-appearance: textfield;
+	outline-offset: -2px;
+}
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+::-webkit-file-upload-button {
+	-webkit-appearance: button;
+	font: inherit;
+}
+details,
+menu {
+	display: block;
+}
+summary {
+	display: list-item;
+}
+canvas {
+	display: inline-block;
+}
+template {
+	display: none;
+}
+[hidden] {
+	display: none;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: "";
+	clear: both;
+	height: 0;
+}
+
+html {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+/* the specific styles begin here  */
+
+body {
+	background: #141e30; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#243b55,
+		#141e30
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#243b55,
+		#141e30
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	padding-top: 6rem;
+}
+
+body p {
+	font-family: "Noto Serif", serif;
+	font-size: 1.8rem;
+}
+
+.fullpage {
+	background-color: rgb(240, 240, 240);
+	width: 50rem;
+	display: block;
+	margin: auto;
+	padding-top: 2rem;
+	padding-bottom: 1rem;
+	border-radius: 3rem;
+}
+
+/* Animation for welcome message */
+
+.welcomemessage div {
+	width: 30rem;
+	background-color: black;
+	color: #00abec;
+	text-align: center;
+	border-radius: 10px;
+	padding: 1rem;
+	display: block;
+	margin: auto;
+}
+.welcomemessage div p {
+	margin: 0;
+}
+.welcomemessage #status:hover {
+	text-shadow: 0 0 200px #ffffff, 0 0 80px, 0 0 6px #00abec, 0 0 6px #0000ff;
+}
+.welcomemessage #message {
+	font-size: 20px;
+}
+
+.welcomemessage #status {
+	font-family: "Rochester", cursive;
+	font-size: 7rem;
+	color: white;
+}
+
+.welcomemessage #status span {
+	animation: upper 11s linear infinite;
+}
+.welcomemessage #message span:nth-of-type(2) {
+	animation: lower 10s linear infinite;
+}
+.welcomemessage #message span:nth-of-type(1) {
+	text-shadow: none;
+	opacity: 0.4;
+}
+
+/* styles for pendulum */
+
+.base {
+	width: 50px;
+	border-top: 1px solid #00abec;
+	margin: auto;
+	text-align: center;
+	position: relative;
+	padding: 0 0 30px;
+}
+
+.holder {
+	width: 30px;
+	height: 20px;
+	background: black;
+	margin: auto;
+	border-radius: 0 0 50% 50%;
+}
+
+.thread {
+	display: inline-block;
+	width: 2px;
+	height: 100px;
+	background: black;
+	border-radius: 5px;
+	position: relative;
+	transform-origin: 50% 0;
+	animation: moveIt 3s ease-in-out infinite;
+}
+
+.thread:after {
+	content: "";
+	position: absolute;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background-color: #00abec;
+	border: 2px solid #00abec;
+	top: -4.5px;
+	left: -2px;
+}
+
+.knob {
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	top: -18px;
+	left: -4.5px;
+	border: 2px solid rgba(255, 255, 255, 0.5);
+	border-radius: 50%;
+	border-bottom: 2px solid transparent;
+}
+
+.pendulum {
+	width: 20px;
+	height: 20px;
+	background: black;
+	border-radius: 50%;
+	position: absolute;
+	bottom: -10px;
+	left: -9px;
+}
+
+/* styles for the choosebox section */
+
+.choosebox {
+	display: flex;
+	justify-content: center;
+	margin-top: -1rem;
+}
+
+.code img,
+.art img {
+	width: 20rem;
+	height: 25rem;
+	border-radius: 10px;
+	filter: hue-rotate(0deg);
+}
+
+.code img:hover,
+.art img:hover {
+	filter: hue-rotate(150deg);
+}
+
+.code,
+.art {
+	background-image: radial-gradient(73% 147%, #eadfdf 59%, #ece2df 100%),
+		radial-gradient(
+			91% 146%,
+			rgba(255, 255, 255, 0.5) 47%,
+			rgba(0, 0, 0, 0.5) 100%
+		);
+	background-blend-mode: screen;
+	box-shadow: rgba(69, 67, 96, 0.3) 0px 5px 20px 0px;
+	margin: 2rem;
+	border-radius: 10px;
+}
+
+.code a,
+.art a {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 10px;
+	box-shadow: rgba(69, 67, 96, 0.3) 0px 5px 20px 0px;
+	text-decoration: none;
+	background-color: black;
+	color: #00abec;
+}
+
+.code :hover,
+.art :hover {
+	color: black;
+	background-color:white;
+}
+
+.code p,
+.art p {
+	text-align: center;
+	margin: 1rem;
+}
+
+/* media queries */
+
+@media (max-width: 600px) {
+	.fullpage {
+		width: 40rem;
+	}
+
+	.code img,
+	.art img {
+		width: 15rem;
+		height: 18rem;
+	}
+}
+
+@media (max-width: 414px) {
+	.fullpage {
+		width: 30rem;
+	}
+
+	.welcomemessage div {
+		width: 23rem;
+	}
+
+	.welcomemessage #message {
+		font-size: 18px;
+	}
+
+	.welcomemessage #status {
+		font-size: 5rem;
+	}
+
+	.code,
+	.art {
+		margin: 0.5rem;
+	}
+
+	.code img,
+	.art img {
+		width: 13rem;
+		height: 15rem;
+	}
+}
+
+/* animation for the welcome message  */
+
+@keyframes upper {
+	0%,
+	19.999%,
+	22%,
+	62.999%,
+	64%,
+	64.999%,
+	70%,
+	100% {
+		opacity: 0.99;
+		text-shadow: 0 0 80px #ffffff, 0 0 30px #00abec; 0 0 6px #0000ff;
+	}
+	20%,
+	21.999%,
+	63%,
+	63.999%,
+	65%,
+	69.999% {
+		opacity: 0.4;
+		text-shadow: none;
+	}
+}
+@keyframes lower {
+	0%,
+	12%,
+	18.999%,
+	23%,
+	31.999%,
+	37%,
+	44.999%,
+	46%,
+	49.999%,
+	51%,
+	58.999%,
+	61%,
+	68.999%,
+	71%,
+	85.999%,
+	96%,
+	100% {
+		opacity: 0.99;
+		text-shadow: 0 0 80px #ffffff, 0 0 30px #00abec; 0 0 6px #0000ff;
+	}
+	19%,
+	22.99%,
+	32%,
+	36.999%,
+	45%,
+	45.999%,
+	50%,
+	50.99%,
+	59%,
+	60.999%,
+	69%,
+	70.999%,
+	86%,
+	95.999% {
+		opacity: 0.4;
+		text-shadow: none;
+	}
+}
+
+/* animation for the pendulum */
+
+@keyframes moveIt {
+	0%,
+	100% {
+		transform: rotate(45deg);
+	}
+	50% {
+		transform: rotate(-45deg);
+	}
+}
